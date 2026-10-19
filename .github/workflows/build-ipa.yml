@@ -1,0 +1,77 @@
+name: Build Vanguard Royale 3D IPA
+
+on:
+  push:
+    branches: [ "main", "master" ]
+    tags: [ "v*" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-export:
+    name: Build 3D Battle Royale IPA
+    runs-on: macos-14
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🍎 Check Xcode Environment
+        run: |
+          xcodebuild -version
+          xcrun --sdk iphoneos --show-sdk-version
+
+      - name: 🛠️ Build Archive (Unsigned / Sideloadable)
+        run: |
+          mkdir -p build
+          xcodebuild archive \
+            -project VanguardRoyale.xcodeproj \
+            -scheme VanguardRoyale \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -archivePath build/VanguardRoyale.xcarchive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES
+
+      - name: 📦 Package .app into .ipa
+        run: |
+          mkdir -p build/Payload
+          cp -r build/VanguardRoyale.xcarchive/Products/Applications/VanguardRoyale.app build/Payload/
+          cd build
+          zip -qr VanguardRoyale.ipa Payload
+          echo "IPA created successfully:"
+          ls -lh VanguardRoyale.ipa
+          unzip -l VanguardRoyale.ipa | head -n 25
+
+      - name: 🚀 Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: VanguardRoyale-iOS-IPA
+          path: build/VanguardRoyale.ipa
+          retention-days: 14
+
+      - name: 🏷️ Publish GitHub Release (When Tagged)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/VanguardRoyale.ipa
+          name: Release ${{ github.ref_name }}
+          body: |
+            🪂 **Vanguard Royale 3D - Battle Royale iOS (Version ${{ github.ref_name }})**
+            
+            Un jeu Battle Royale 3D complet style PUBG/Fortnite avec largage parachute, tempête rétrécissante, combats 3D et bots IA !
+            
+            ### Comment installer l'IPA sur iPhone / iPad :
+            1. **AltStore** : Téléchargez le fichier `.ipa`, ouvrez AltStore sur votre iPhone et appuyez sur le bouton `+` pour installer.
+            2. **Sideloadly** : Glissez-déposez le fichier `VanguardRoyale.ipa` sur Sideloadly (PC/Mac) relié à votre iPhone.
+            3. **TrollStore / Scarlet** : Ouvrez directement le fichier `.ipa` avec l'application.
+            
+            *Compatible iOS 15.0+ avec écran 120 FPS ProMotion.*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
