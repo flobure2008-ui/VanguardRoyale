@@ -38,7 +38,7 @@ public class BattleRoyaleScene: SCNScene, SCNSceneRendererDelegate {
         sunLight = SCNNode()
         sunLight.light = sun
         sunLight.position = SCNVector3(100, 180, 100)
-        sunLight.eulerAngles = SCNVector3(-.pi / 3, .pi / 4, 0)
+        sunLight.eulerAngles = SCNVector3(-Float.pi / 3, Float.pi / 4, 0)
         rootNode.addChildNode(sunLight)
         
         // 2. Ambient Sky Fill
@@ -150,7 +150,7 @@ public class BattleRoyaleScene: SCNScene, SCNSceneRendererDelegate {
                 if curr?.name == "BotHead" {
                     isHead = true
                 }
-                curr = curr?.parentNode
+                curr = curr?.parent
             }
             
             if let bot = targetBot {

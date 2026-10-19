@@ -70,7 +70,7 @@ public class BotAINode: SCNNode {
         
         if dist < 45.0 {
             // Engage player!
-            lookAt(playerPos)
+            faceTarget(playerPos)
             shootCooldown += dt
             if shootCooldown >= 1.6 {
                 shootCooldown = 0
@@ -82,7 +82,7 @@ public class BotAINode: SCNNode {
         }
     }
     
-    private func lookAt(_ target: SCNVector3) {
+    private func faceTarget(_ target: SCNVector3) {
         let dx = target.x - position.x
         let dz = target.z - position.z
         let angle = atan2(dx, dz)
@@ -100,7 +100,7 @@ public class BotAINode: SCNNode {
             let speed: Float = 6.0 * dt
             position.x += (dx / dist) * speed
             position.z += (dz / dist) * speed
-            lookAt(targetPos)
+            faceTarget(targetPos)
         }
     }
     

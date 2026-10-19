@@ -7,45 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C9250ADECD2FBC4122D52AA /* VanguardRoyaleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1DECD2FBC4F953ABA2 /* VanguardRoyaleApp.swift */; };
-		7C9250AD83EF5641A509A5E1 /* BattleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1D83EF5641CDB15BEA /* BattleState.swift */; };
-		7C9250AD33001FD840010699 /* KillfeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1D33001FD83C7AEF3B /* KillfeedManager.swift */; };
-		7C9250AD7C19639FB89108CE /* SoundFXEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1D7C19639F560FD5DF /* SoundFXEngine.swift */; };
-		7C9250ADCB5160A3A11FBC2C /* TerrainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1DCB5160A373E340B0 /* TerrainBuilder.swift */; };
-		7C9250AD57E906E42EE44777 /* StormSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1D57E906E46710A04C /* StormSystem.swift */; };
-		7C9250AD6644B8926D05745A /* WeaponSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1D6644B89290253E56 /* WeaponSystem.swift */; };
-		7C9250ADDFEE40826B834DFB /* PlayerCharacterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1DDFEE4082BB98AF18 /* PlayerCharacterNode.swift */; };
-		7C9250AD71BBAE322E8DA484 /* BotAINode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1D71BBAE32C6CC7201 /* BotAINode.swift */; };
-		7C9250AD64A2E2CEA4B43625 /* LootItemNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1D64A2E2CEA145FAAA /* LootItemNode.swift */; };
-		7C9250ADFFC15970A0F2C139 /* BuildingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1DFFC159709188CBB7 /* BuildingSystem.swift */; };
-		7C9250ADA3D8595B81E8D012 /* BattleRoyaleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1DA3D8595B07BCDA58 /* BattleRoyaleScene.swift */; };
-		7C9250AD9A0814124283831D /* Game3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1D9A0814120C7B3240 /* Game3DViewController.swift */; };
-		7C9250AD68E15013091EDC3B /* HUD3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1D68E1501360EA3012 /* HUD3DView.swift */; };
-		7C9250ADF40890D2876A230F /* VictoryRoyaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1DF40890D272AB0DA3 /* VictoryRoyaleView.swift */; };
-		7C9250AD54D66A2FB24336CD /* DefeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D3D1D54D66A2FF2D04C07 /* DefeatView.swift */; };
-		7C9250ADE7F677E21F68E583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19D3D1DE7F677E272383EA3 /* Assets.xcassets */; };
+		A5B60F86908898E022091015 /* VanguardRoyaleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC9908898E00F5196A8 /* VanguardRoyaleApp.swift */; };
+		A5B60F860E97CC8C82B316ED /* BattleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC90E97CC8C7D5CA27C /* BattleState.swift */; };
+		A5B60F86D0F386E67AB47E9C /* KillfeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC9D0F386E6E38FA21A /* KillfeedManager.swift */; };
+		A5B60F864EA30FFAC1C998E8 /* SoundFXEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC94EA30FFA5BC44D9C /* SoundFXEngine.swift */; };
+		A5B60F860911EC5C73EB9D76 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC90911EC5C1FD42AA9 /* HapticManager.swift */; };
+		A5B60F86317C510059E7B805 /* TerrainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC9317C51005BC600CB /* TerrainBuilder.swift */; };
+		A5B60F866EF81F77274EBADE /* StormSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC96EF81F778A7ECCDF /* StormSystem.swift */; };
+		A5B60F8611CEE10B963CC06E /* WeaponSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC911CEE10B98CC92A8 /* WeaponSystem.swift */; };
+		A5B60F86D215C13314BEFAD2 /* PlayerCharacterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC9D215C133CCD1DCFB /* PlayerCharacterNode.swift */; };
+		A5B60F863A421D1AA9E28539 /* BotAINode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC93A421D1AC38D97E0 /* BotAINode.swift */; };
+		A5B60F86BF74E73AEC595ED0 /* LootItemNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC9BF74E73A21378CEC /* LootItemNode.swift */; };
+		A5B60F867DA2A98DF6D618F0 /* BuildingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC97DA2A98D4BE2C835 /* BuildingSystem.swift */; };
+		A5B60F86988C28D6F7A526C0 /* BattleRoyaleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC9988C28D62850546A /* BattleRoyaleScene.swift */; };
+		A5B60F86EF7B4A18E57B159E /* Game3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC9EF7B4A18ABFE6B59 /* Game3DViewController.swift */; };
+		A5B60F8674EA7367DB5B9D0B /* HUD3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC974EA7367682EE128 /* HUD3DView.swift */; };
+		A5B60F8691C23E74C9BBA285 /* VictoryRoyaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC991C23E74F8A6E58E /* VictoryRoyaleView.swift */; };
+		A5B60F863DB68D48CBC9136F /* DefeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD17EC93DB68D48575D653D /* DefeatView.swift */; };
+		A5B60F86EE4FEA116D14B415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD17EC9EE4FEA11897DDAC0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B10000000000000000000008 /* VanguardRoyale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VanguardRoyale.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C19D3D1DECD2FBC4F953ABA2 /* VanguardRoyaleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanguardRoyaleApp.swift; sourceTree = "<group>"; };
-		C19D3D1D7C0830335700958F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C19D3D1D83EF5641CDB15BEA /* BattleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleState.swift; sourceTree = "<group>"; };
-		C19D3D1D33001FD83C7AEF3B /* KillfeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillfeedManager.swift; sourceTree = "<group>"; };
-		C19D3D1D7C19639F560FD5DF /* SoundFXEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFXEngine.swift; sourceTree = "<group>"; };
-		C19D3D1DCB5160A373E340B0 /* TerrainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainBuilder.swift; sourceTree = "<group>"; };
-		C19D3D1D57E906E46710A04C /* StormSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormSystem.swift; sourceTree = "<group>"; };
-		C19D3D1D6644B89290253E56 /* WeaponSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSystem.swift; sourceTree = "<group>"; };
-		C19D3D1DDFEE4082BB98AF18 /* PlayerCharacterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCharacterNode.swift; sourceTree = "<group>"; };
-		C19D3D1D71BBAE32C6CC7201 /* BotAINode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotAINode.swift; sourceTree = "<group>"; };
-		C19D3D1D64A2E2CEA145FAAA /* LootItemNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootItemNode.swift; sourceTree = "<group>"; };
-		C19D3D1DFFC159709188CBB7 /* BuildingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingSystem.swift; sourceTree = "<group>"; };
-		C19D3D1DA3D8595B07BCDA58 /* BattleRoyaleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleRoyaleScene.swift; sourceTree = "<group>"; };
-		C19D3D1D9A0814120C7B3240 /* Game3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game3DViewController.swift; sourceTree = "<group>"; };
-		C19D3D1D68E1501360EA3012 /* HUD3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD3DView.swift; sourceTree = "<group>"; };
-		C19D3D1DF40890D272AB0DA3 /* VictoryRoyaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryRoyaleView.swift; sourceTree = "<group>"; };
-		C19D3D1D54D66A2FF2D04C07 /* DefeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefeatView.swift; sourceTree = "<group>"; };
-		C19D3D1DE7F677E272383EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDD17EC9908898E00F5196A8 /* VanguardRoyaleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanguardRoyaleApp.swift; sourceTree = "<group>"; };
+		DDD17EC902F9CD41E6A1ECAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD17EC90E97CC8C7D5CA27C /* BattleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleState.swift; sourceTree = "<group>"; };
+		DDD17EC9D0F386E6E38FA21A /* KillfeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillfeedManager.swift; sourceTree = "<group>"; };
+		DDD17EC94EA30FFA5BC44D9C /* SoundFXEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFXEngine.swift; sourceTree = "<group>"; };
+		DDD17EC90911EC5C1FD42AA9 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		DDD17EC9317C51005BC600CB /* TerrainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainBuilder.swift; sourceTree = "<group>"; };
+		DDD17EC96EF81F778A7ECCDF /* StormSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormSystem.swift; sourceTree = "<group>"; };
+		DDD17EC911CEE10B98CC92A8 /* WeaponSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponSystem.swift; sourceTree = "<group>"; };
+		DDD17EC9D215C133CCD1DCFB /* PlayerCharacterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCharacterNode.swift; sourceTree = "<group>"; };
+		DDD17EC93A421D1AC38D97E0 /* BotAINode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotAINode.swift; sourceTree = "<group>"; };
+		DDD17EC9BF74E73A21378CEC /* LootItemNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootItemNode.swift; sourceTree = "<group>"; };
+		DDD17EC97DA2A98D4BE2C835 /* BuildingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingSystem.swift; sourceTree = "<group>"; };
+		DDD17EC9988C28D62850546A /* BattleRoyaleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleRoyaleScene.swift; sourceTree = "<group>"; };
+		DDD17EC9EF7B4A18ABFE6B59 /* Game3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game3DViewController.swift; sourceTree = "<group>"; };
+		DDD17EC974EA7367682EE128 /* HUD3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD3DView.swift; sourceTree = "<group>"; };
+		DDD17EC991C23E74F8A6E58E /* VictoryRoyaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryRoyaleView.swift; sourceTree = "<group>"; };
+		DDD17EC93DB68D48575D653D /* DefeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefeatView.swift; sourceTree = "<group>"; };
+		DDD17EC9EE4FEA11897DDAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,7 @@
 				B10000000000000000000022 /* Engine3D */,
 				B10000000000000000000023 /* State */,
 				B10000000000000000000024 /* UI */,
-				C19D3D1DE7F677E272383EA3 /* Assets.xcassets */,
+				DDD17EC9EE4FEA11897DDAC0 /* Assets.xcassets */,
 			);
 			path = VanguardRoyale;
 			sourceTree = "<group>";
@@ -90,8 +92,8 @@
 		B10000000000000000000021 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				C19D3D1DECD2FBC4F953ABA2 /* VanguardRoyaleApp.swift */,
-				C19D3D1D7C0830335700958F /* Info.plist */,
+				DDD17EC9908898E00F5196A8 /* VanguardRoyaleApp.swift */,
+				DDD17EC902F9CD41E6A1ECAE /* Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -99,16 +101,17 @@
 		B10000000000000000000022 /* Engine3D */ = {
 			isa = PBXGroup;
 			children = (
-				C19D3D1D7C19639F560FD5DF /* SoundFXEngine.swift */,
-				C19D3D1DCB5160A373E340B0 /* TerrainBuilder.swift */,
-				C19D3D1D57E906E46710A04C /* StormSystem.swift */,
-				C19D3D1D6644B89290253E56 /* WeaponSystem.swift */,
-				C19D3D1DDFEE4082BB98AF18 /* PlayerCharacterNode.swift */,
-				C19D3D1D71BBAE32C6CC7201 /* BotAINode.swift */,
-				C19D3D1D64A2E2CEA145FAAA /* LootItemNode.swift */,
-				C19D3D1DFFC159709188CBB7 /* BuildingSystem.swift */,
-				C19D3D1DA3D8595B07BCDA58 /* BattleRoyaleScene.swift */,
-				C19D3D1D9A0814120C7B3240 /* Game3DViewController.swift */,
+				DDD17EC94EA30FFA5BC44D9C /* SoundFXEngine.swift */,
+				DDD17EC90911EC5C1FD42AA9 /* HapticManager.swift */,
+				DDD17EC9317C51005BC600CB /* TerrainBuilder.swift */,
+				DDD17EC96EF81F778A7ECCDF /* StormSystem.swift */,
+				DDD17EC911CEE10B98CC92A8 /* WeaponSystem.swift */,
+				DDD17EC9D215C133CCD1DCFB /* PlayerCharacterNode.swift */,
+				DDD17EC93A421D1AC38D97E0 /* BotAINode.swift */,
+				DDD17EC9BF74E73A21378CEC /* LootItemNode.swift */,
+				DDD17EC97DA2A98D4BE2C835 /* BuildingSystem.swift */,
+				DDD17EC9988C28D62850546A /* BattleRoyaleScene.swift */,
+				DDD17EC9EF7B4A18ABFE6B59 /* Game3DViewController.swift */,
 			);
 			path = Engine3D;
 			sourceTree = "<group>";
@@ -116,8 +119,8 @@
 		B10000000000000000000023 /* State */ = {
 			isa = PBXGroup;
 			children = (
-				C19D3D1D83EF5641CDB15BEA /* BattleState.swift */,
-				C19D3D1D33001FD83C7AEF3B /* KillfeedManager.swift */,
+				DDD17EC90E97CC8C7D5CA27C /* BattleState.swift */,
+				DDD17EC9D0F386E6E38FA21A /* KillfeedManager.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -125,9 +128,9 @@
 		B10000000000000000000024 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				C19D3D1D68E1501360EA3012 /* HUD3DView.swift */,
-				C19D3D1DF40890D272AB0DA3 /* VictoryRoyaleView.swift */,
-				C19D3D1D54D66A2FF2D04C07 /* DefeatView.swift */,
+				DDD17EC974EA7367682EE128 /* HUD3DView.swift */,
+				DDD17EC991C23E74F8A6E58E /* VictoryRoyaleView.swift */,
+				DDD17EC93DB68D48575D653D /* DefeatView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -190,7 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C9250ADE7F677E21F68E583 /* Assets.xcassets in Resources */,
+				A5B60F86EE4FEA116D14B415 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,22 +204,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C9250ADECD2FBC4122D52AA /* VanguardRoyaleApp.swift in Sources */,
-				7C9250AD83EF5641A509A5E1 /* BattleState.swift in Sources */,
-				7C9250AD33001FD840010699 /* KillfeedManager.swift in Sources */,
-				7C9250AD7C19639FB89108CE /* SoundFXEngine.swift in Sources */,
-				7C9250ADCB5160A3A11FBC2C /* TerrainBuilder.swift in Sources */,
-				7C9250AD57E906E42EE44777 /* StormSystem.swift in Sources */,
-				7C9250AD6644B8926D05745A /* WeaponSystem.swift in Sources */,
-				7C9250ADDFEE40826B834DFB /* PlayerCharacterNode.swift in Sources */,
-				7C9250AD71BBAE322E8DA484 /* BotAINode.swift in Sources */,
-				7C9250AD64A2E2CEA4B43625 /* LootItemNode.swift in Sources */,
-				7C9250ADFFC15970A0F2C139 /* BuildingSystem.swift in Sources */,
-				7C9250ADA3D8595B81E8D012 /* BattleRoyaleScene.swift in Sources */,
-				7C9250AD9A0814124283831D /* Game3DViewController.swift in Sources */,
-				7C9250AD68E15013091EDC3B /* HUD3DView.swift in Sources */,
-				7C9250ADF40890D2876A230F /* VictoryRoyaleView.swift in Sources */,
-				7C9250AD54D66A2FB24336CD /* DefeatView.swift in Sources */,
+				A5B60F86908898E022091015 /* VanguardRoyaleApp.swift in Sources */,
+				A5B60F860E97CC8C82B316ED /* BattleState.swift in Sources */,
+				A5B60F86D0F386E67AB47E9C /* KillfeedManager.swift in Sources */,
+				A5B60F864EA30FFAC1C998E8 /* SoundFXEngine.swift in Sources */,
+				A5B60F860911EC5C73EB9D76 /* HapticManager.swift in Sources */,
+				A5B60F86317C510059E7B805 /* TerrainBuilder.swift in Sources */,
+				A5B60F866EF81F77274EBADE /* StormSystem.swift in Sources */,
+				A5B60F8611CEE10B963CC06E /* WeaponSystem.swift in Sources */,
+				A5B60F86D215C13314BEFAD2 /* PlayerCharacterNode.swift in Sources */,
+				A5B60F863A421D1AA9E28539 /* BotAINode.swift in Sources */,
+				A5B60F86BF74E73AEC595ED0 /* LootItemNode.swift in Sources */,
+				A5B60F867DA2A98DF6D618F0 /* BuildingSystem.swift in Sources */,
+				A5B60F86988C28D6F7A526C0 /* BattleRoyaleScene.swift in Sources */,
+				A5B60F86EF7B4A18E57B159E /* Game3DViewController.swift in Sources */,
+				A5B60F8674EA7367DB5B9D0B /* HUD3DView.swift in Sources */,
+				A5B60F8691C23E74C9BBA285 /* VictoryRoyaleView.swift in Sources */,
+				A5B60F863DB68D48CBC9136F /* DefeatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

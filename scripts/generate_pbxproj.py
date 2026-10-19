@@ -6,6 +6,7 @@ files = [
     ('State/BattleState.swift', 'State', 'BattleState.swift', False),
     ('State/KillfeedManager.swift', 'State', 'KillfeedManager.swift', False),
     ('Engine3D/SoundFXEngine.swift', 'Engine3D', 'SoundFXEngine.swift', False),
+    ('Engine3D/HapticManager.swift', 'Engine3D', 'HapticManager.swift', False),
     ('Engine3D/TerrainBuilder.swift', 'Engine3D', 'TerrainBuilder.swift', False),
     ('Engine3D/StormSystem.swift', 'Engine3D', 'StormSystem.swift', False),
     ('Engine3D/WeaponSystem.swift', 'Engine3D', 'WeaponSystem.swift', False),

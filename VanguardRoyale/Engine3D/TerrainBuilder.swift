@@ -87,7 +87,7 @@ public class TerrainBuilder {
         houseNode.addChildNode(wallNode)
         
         // Pitched Roof
-        let roofGeo = SCNPyramid(width: 9.0, length: 11.0, height: 2.5)
+        let roofGeo = SCNPyramid(width: 9.0, height: 2.5, length: 11.0)
         let roofMat = SCNMaterial()
         roofMat.diffuse.contents = UIColor(red: 0.55, green: 0.22, blue: 0.18, alpha: 1.0) // Red tile
         roofGeo.materials = [roofMat]
